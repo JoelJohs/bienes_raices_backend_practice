@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bíenes Raíces</title>
+    <title>Bienes Raices</title>
     <link rel="stylesheet" href="build/css/app.css" />
   </head>
   <body>
@@ -11,96 +11,365 @@
       <div class="contenedor contenido-header">
         <div class="barra">
           <a href="/">
-            <img class="logo-header" src="build/img/logo.svg" alt="Logo"
-          /></a>
+            <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices" />
+          </a>
 
-          <nav class="navegacion">
-            <a href="nosotros.html">Nosotros</a>
-            <a href="anuncios.html">Anuncions</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.html">Contacto</a>
-          </nav>
+          <div class="mobile-menu">
+            <img src="build/img/barras.svg" alt="icono menu responsive" />
+          </div>
+
+          <div class="derecha">
+            <img class="dark-mode-boton" src="build/img/dark-mode.svg" />
+            <nav class="navegacion">
+              <a href="nosotros.html">Nosotros</a>
+              <a href="anuncios.html">Anuncios</a>
+              <a href="blog.html">Blog</a>
+              <a href="contacto.html">Contacto</a>
+            </nav>
+          </div>
         </div>
-        <!--.cierre de la barra-->
+        <!--.barra-->
       </div>
     </header>
-    <main class="contenedor seccion contenido-centrado">
-      <h1>Casa en venta frente al bosque</h1>
 
-      <picture>
-        <source srcset="build/img/destacada.webp" type="image/webp" />
-        <source srcset="build/img/destacada.jpg" type="image/jpeg" />
-        <img
-          loading="lazy"
-          src="build/img/destacada.jpg"
-          alt="Anuncio propiedad"
-        />
-      </picture>
+    <main class="contenedor seccion">
+      <h2>Casas y Depas en Venta</h2>
 
-      <div class="resumen-propiedad">
-        <p class="precio">$3,000,000</p>
-        <ul class="iconos-caracteristicas">
-          <li>
-            <img loading="lazy" src="build/img/icono_wc.svg" alt="icono WS" />
-            <p>3</p>
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              src="build/img/icono_estacionamiento.svg"
-              alt="icono Estacionamiento"
-            />
-            <p>3</p>
-          </li>
-          <li>
-            <img
-              loading="lazy"
-              src="build/img/icono_dormitorio.svg"
-              alt="iconos Dormitorio"
-            />
-            <p>4</p>
-          </li>
-        </ul>
-        <p>
-          Adéntrate en el santuario de serenidad y lujo que es esta
-          impresionante residencia, cuyo valor de 3 millones se ve reflejado en
-          cada rincón meticulosamente diseñado. Ubicada majestuosamente frente a
-          un exuberante bosque, esta casa ofrece una experiencia de vida
-          excepcionalmente armoniosa con la naturaleza circundante. Al cruzar el
-          umbral, te reciben amplios espacios llenos de luz natural que fluyen
-          sin esfuerzo entre sí, desde la sala de estar de techos altos y
-          elegantes hasta el comedor formal adornado con vistas panorámicas del
-          frondoso paisaje exterior. La cocina gourmet, equipada con
-          electrodomésticos de primera línea y una isla central, invita a los
-          amantes de la gastronomía a explorar su creatividad culinaria mientras
-          disfrutan de la inspiradora vista al bosque.
-        </p>
-        <p>
-          Con un total de tres baños, cada uno diseñado con acabados de alta
-          calidad y detalles lujosos, y cuatro dormitorios amplios y acogedores,
-          incluida una suite principal que te envuelve en un oasis de relajación
-          con su propio baño spa y vestidor, esta residencia redefine el
-          concepto de confort y elegancia. Además, sus tres cocheras ofrecen
-          espacio más que suficiente para albergar tus vehículos más preciados.
-          Vive la vida al máximo en este refugio idílico que combina la paz y la
-          privacidad del entorno natural con el lujo y la comodidad de una
-          residencia de clase mundial.
-        </p>
+      <div class="contenedor-anuncios">
+        <div class="anuncio">
+          <picture>
+            <source srcset="build/img/anuncio1.webp" type="image/webp" />
+            <source srcset="build/img/anuncio1.jpg" type="image/jpeg" />
+            <img loading="lazy" src="build/img/anuncio1.jpg" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Casa de Lujo en el Lago</h3>
+            <p>
+              Casa en el lago con excelente vista, acabados de lujo a un
+              excelente precio
+            </p>
+            <p class="precio">$3,0000,000</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_wc.svg"
+                  alt="icono wc"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_estacionamiento.svg"
+                  alt="icono estacionamiento"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a href="anuncio.html" class="boton-amarillo-block">
+              Ver Propiedad
+            </a>
+          </div>
+          <!--.contenido-anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <picture>
+            <source srcset="build/img/anuncio2.webp" type="image/webp" />
+            <source srcset="build/img/anuncio2.jpg" type="image/jpeg" />
+            <img loading="lazy" src="build/img/anuncio2.jpg" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Casa terminados de lujo</h3>
+            <p>
+              Casa en el lago con excelente vista, acabados de lujo a un
+              excelente precio
+            </p>
+            <p class="precio">$3,0000,000</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_wc.svg"
+                  alt="icono wc"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_estacionamiento.svg"
+                  alt="icono estacionamiento"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a href="anuncio.html" class="boton-amarillo-block">
+              Ver Propiedad
+            </a>
+          </div>
+          <!--.contenido-anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <picture>
+            <source srcset="build/img/anuncio3.webp" type="image/webp" />
+            <source srcset="build/img/anuncio3.jpg" type="image/jpeg" />
+            <img loading="lazy" src="build/img/anuncio3.jpg" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Casa con alberca</h3>
+            <p>
+              Casa en el lago con excelente vista, acabados de lujo a un
+              excelente precio
+            </p>
+            <p class="precio">$3,0000,000</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_wc.svg"
+                  alt="icono wc"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_estacionamiento.svg"
+                  alt="icono estacionamiento"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a href="anuncio.html" class="boton-amarillo-block">
+              Ver Propiedad
+            </a>
+          </div>
+          <!--.contenido-anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <picture>
+            <source srcset="build/img/anuncio4.webp" type="image/webp" />
+            <source srcset="build/img/anuncio4.jpg" type="image/jpeg" />
+            <img loading="lazy" src="build/img/anuncio4.jpg" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Casa con alberca</h3>
+            <p>
+              Casa en el lago con excelente vista, acabados de lujo a un
+              excelente precio
+            </p>
+            <p class="precio">$3,0000,000</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_wc.svg"
+                  alt="icono wc"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_estacionamiento.svg"
+                  alt="icono estacionamiento"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a href="anuncio.html" class="boton-amarillo-block">
+              Ver Propiedad
+            </a>
+          </div>
+          <!--.contenido-anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <picture>
+            <source srcset="build/img/anuncio5.webp" type="image/webp" />
+            <source srcset="build/img/anuncio5.jpg" type="image/jpeg" />
+            <img loading="lazy" src="build/img/anuncio5.jpg" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Casa con alberca</h3>
+            <p>
+              Casa en el lago con excelente vista, acabados de lujo a un
+              excelente precio
+            </p>
+            <p class="precio">$3,0000,000</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_wc.svg"
+                  alt="icono wc"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_estacionamiento.svg"
+                  alt="icono estacionamiento"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a href="anuncio.html" class="boton-amarillo-block">
+              Ver Propiedad
+            </a>
+          </div>
+          <!--.contenido-anuncio-->
+        </div>
+        <!--anuncio-->
+
+        <div class="anuncio">
+          <picture>
+            <source srcset="build/img/anuncio6.webp" type="image/webp" />
+            <source srcset="build/img/anuncio6.jpg" type="image/jpeg" />
+            <img loading="lazy" src="build/img/anuncio6.jpg" alt="anuncio" />
+          </picture>
+
+          <div class="contenido-anuncio">
+            <h3>Casa con alberca</h3>
+            <p>
+              Casa en el lago con excelente vista, acabados de lujo a un
+              excelente precio
+            </p>
+            <p class="precio">$3,0000,000</p>
+
+            <ul class="iconos-caracteristicas">
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_wc.svg"
+                  alt="icono wc"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_estacionamiento.svg"
+                  alt="icono estacionamiento"
+                />
+                <p>3</p>
+              </li>
+              <li>
+                <img
+                  class="icono"
+                  loading="lazy"
+                  src="build/img/icono_dormitorio.svg"
+                  alt="icono habitaciones"
+                />
+                <p>4</p>
+              </li>
+            </ul>
+
+            <a href="anuncio.html" class="boton-amarillo-block">
+              Ver Propiedad
+            </a>
+          </div>
+          <!--.contenido-anuncio-->
+        </div>
+        <!--anuncio-->
       </div>
+      <!--.contenedor-anuncios-->
     </main>
 
     <footer class="footer seccion">
-      <div class="contenedor contenido-footer">
+      <div class="contenedor contenedor-footer">
         <nav class="navegacion">
           <a href="nosotros.html">Nosotros</a>
-          <a href="anuncios.html">Anuncions</a>
+          <a href="anuncios.html">Anuncios</a>
           <a href="blog.html">Blog</a>
           <a href="contacto.html">Contacto</a>
         </nav>
       </div>
 
-      <p class="copyright">Todos los Derechos Reservados</p>
+      <p class="copyright">Todos los derechos Reservados 2021 &copy;</p>
     </footer>
+
     <script src="build/js/bundle.min.js"></script>
   </body>
 </html>
